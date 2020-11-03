@@ -1,0 +1,38 @@
+<div class="contents">
+  <div class="message clearfix">
+    <%= image_tag "cat1.png" %>
+    <div class="message_box">
+      <p class="user_name">
+        野良猫1号
+      <p>
+      <p class="text">
+        今日も暇だにゃー、とりあえずゴロゴロするかにゃー、煮干し食べたいにゃー、食べたあとは散歩でも行きたいにゃー。
+        今日も暇だにゃー、とりあえずゴロゴロするかにゃー、煮干し食べたいにゃー、食べたあとは散歩でも行きたいにゃー。
+        今日も暇だにゃー、とりあえずゴロゴロするかにゃー、煮干し食べたいにゃー、食べたあとは散歩でも行きたいにゃー。
+      </p>
+    </div>
+  </div>
+  <div class="message clearfix">
+    <%= image_tag "cat1.png" %>
+    <div class="message_box">
+      <p class="user_name">たま
+      <p>
+      <p class="text">
+        家宝は寝て待てにゃー。急がば回れにゃー。蓼食う虫も好き好きにゃー。一念岩をも通すにゃー。千石取れば万石羨むにゃー。
+      <p>
+    </div>
+  </div>
+  <% @tweets.each do |tweet| %>
+    <div class="message clearfix">
+      <%= image_tag "cat1.png" %>
+      <div class="message_box">
+        <p class="user_name">たま
+        <p>
+        <p class="text">
+          <%= tweet.text %>
+        </p>
+      </div>
+    </div>
+  <% end %>
+</div>
+
